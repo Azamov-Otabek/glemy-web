@@ -1,0 +1,66 @@
+---
+    import Layout from "../Layout/layout.astro";
+    import home_logo from "../assets/images/home_logo.png";
+    import s_logo from "../assets/images/s_logo.png";
+---
+
+
+
+ <Layout>
+        <section>
+            <div class="container relative">
+                <div class="absolute flex items-center gap-[87px] top-[260px] left-[-120px] rotate-[270deg]">
+                    <ul class="flex gap-[40px]">
+                      <li class="text-white font-semibold">development</li>
+                      <li class="text-white font-semibold">designing</li>
+                      <li class="text-white font-semibold">digital marketing</li>
+                    </ul>
+                    <img id="home_logo" src={home_logo.src} alt="home_logo">
+                  </div>
+                <h2 class="text-white text-[40px] pt-[122px] pl-[172px] ">SERVICES</h2>
+
+                <div class="flex justify-between pl-[210px] pt-[90px] relative">
+                    <img src={s_logo.src} alt="logo">
+                    <div class="w-[396px]">
+                        <h3 class="text-[32px] text-white mb-[16px]">Brand Identity.</h3>
+                        <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                            forefront gives an emotional dimension to your
+                            visual identity, which is essential today more
+                            than ever in today's digital landscape.</p>
+                        <h4 class="text-white text-[24px]">Know more</h4>
+                    </div>
+                    <div class="w-[396px]">
+                        <h3 class="text-[32px] text-white mb-[16px]">Technology.</h3>
+                        <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                            forefront gives an emotional dimension to your
+                            visual identity, which is essential today more
+                            than ever in today's digital landscape.</p>
+                        <h4 class="text-white text-[24px]">Know more</h4>
+                    </div>
+                    <div class="w-[396px]">
+                        <h3 class="text-[32px] text-white mb-[16px]">UX/UI Design.</h3>
+                        <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                            forefront gives an emotional dimension to your
+                            visual identity, which is essential today more
+                            than ever in today's digital landscape.</p>
+                        <h4 class="text-white text-[24px]">Know more</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+ </Layout>
+
+
+ <style>
+
+    .container{
+		max-width: 1920px;
+		padding: 0 102px;
+		margin: 0 auto;
+	}
+    #home_logo{
+        animation-name: footer_logo;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+    }
+ </style>

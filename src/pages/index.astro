@@ -1,0 +1,35 @@
+---
+import G_logo from "../assets/images/G_logo.png";
+---
+
+<script>
+	window.addEventListener("click", () => {
+		window.location.href = "/home"
+	})
+</script>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="bg-black">
+		<div class="container home page relative flex justify-center">
+			<img class="absolute left-[828px] top-[280px]" src={G_logo.src} alt="G_logo">
+			<h2 class="text-[55px] text-white font-bold mt-[460px] relative z-20">gleamy</h2>
+		</div>
+	</body>
+</html>
+
+<style>
+	.container{
+		max-width: 1920px;
+		padding: 0 102px;
+		margin: 0 auto;
+	}
+</style>
+
+

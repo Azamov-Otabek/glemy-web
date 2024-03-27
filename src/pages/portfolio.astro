@@ -1,0 +1,59 @@
+---
+    import Layout from "../Layout/layout.astro";
+    import home_logo from "../assets/images/home_logo.png";
+    import p_logo from "../assets/images/p_logo.png";
+    import portfolio1 from "../assets/images/portfolio (1).png";
+    import portfolio2 from "../assets/images/portfolio (2).png";
+    import portfolio3 from "../assets/images/portfolio (3).png";
+---
+
+
+
+ <Layout>
+        <section>
+            <div class="container relative">
+                <div class="absolute flex items-center gap-[87px] top-[260px] left-[-120px] rotate-[270deg]">
+                    <ul class="flex gap-[40px]">
+                      <li class="text-white font-semibold">development</li>
+                      <li class="text-white font-semibold">designing</li>
+                      <li class="text-white font-semibold">digital marketing</li>
+                    </ul>
+                    <img id="home_logo" src={home_logo.src} alt="home_logo">
+                  </div>
+                <h2 class="text-white text-[40px] pt-[122px] pl-[172px] ">PORTFOLIO</h2>
+                  <div class="flex justify-between gap-[50px] pl-[172px] pt-[40px]">
+                        <img src={p_logo.src} alt="logo">
+                        <div class="w-[400px]">
+                            <img src={portfolio1.src} alt="portfolio">
+                            <h3 class="text-white mt-[40px] mb-[10px] text-[24px] text-center">Gleamy portfolio</h3>
+                            <p class="text-[#D0D0D0] text-center">UI/UX</p>
+                        </div>
+                        <div class="w-[400px]">
+                            <img src={portfolio3.src} alt="portfolio">
+                            <h3 class="text-white mt-[40px] mb-[10px] text-[24px] text-center">Gleamy portfolio</h3>
+                            <p class="text-[#D0D0D0] text-center">UI/UX</p>
+                        </div>
+                        <div class="w-[400px] pt-[70px]">
+                            <img src={portfolio2.src} alt="portfolio">
+                            <h3 class="text-white mt-[40px] mb-[10px] text-[24px] text-center">Gleamy portfolio</h3>
+                            <p class="text-[#D0D0D0] text-center">UI/UX</p>
+                        </div>
+                  </div>
+            </div>
+        </section>
+ </Layout>
+
+
+ <style>
+
+    .container{
+		max-width: 1920px;
+		padding: 0 102px;
+		margin: 0 auto;
+	}
+    #home_logo{
+        animation-name: footer_logo;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+    }
+ </style>

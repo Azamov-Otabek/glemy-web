@@ -1,0 +1,31 @@
+---
+import footer_logo from "../assets/images/footer_logo.png";
+---
+
+<footer class="container relative">
+    <img class="absolute top-0 right-[100px]" id="footer_logo" src={footer_logo.src} alt="footer_logo">
+</footer>
+
+<style>
+    .container{
+		max-width: 1920px;
+		padding: 0 102px;
+		margin: 0 auto;
+	}
+
+	#footer_logo{
+        animation-name: footer_logo;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes footer_logo{
+        0%{
+            transform: rotate(45deg);
+        }
+        100%{
+            transform: rotate(720deg);
+        }
+
+    }
+</style>

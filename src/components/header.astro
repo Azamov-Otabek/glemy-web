@@ -1,0 +1,55 @@
+
+<script>
+    const menu_btn = document.querySelector('#menu-btn');
+    const dropdown = document.querySelector('#dropdown');
+
+    menu_btn.addEventListener('click', () => {
+       dropdown?.classList.toggle('hidden');
+    })
+
+
+</script>
+
+
+<header class="py-[17px]">
+    <nav class="container flex justify-between items-center">
+        <div class="header-left flex items-center gap-[16px]">
+            <p class="text-white text-[14px]">FB</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                <circle cx="2.625" cy="2.5" r="2.5" fill="#FF7E21"/>
+              </svg>
+            <p class="text-white text-[14px]">IN</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                <circle cx="2.625" cy="2.5" r="2.5" fill="#FF7E21"/>
+              </svg>
+            <p class="text-white text-[14px]">DR</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                <circle cx="2.625" cy="2.5" r="2.5" fill="#FF7E21"/>
+              </svg>
+            <p class="text-white text-[14px]">BE</p>
+        </div>
+        <h2 class="text-[30px] text-white font-semibold">gleamy</h2>
+        <div class="header-right flex gap-[35px] relative dropdown-wrapper">
+            <i class="bi bi-search text-white cursor-pointer pr-10 border-r-[1px] border-[#ffffff36]"></i>
+            <p class="text-white flex items-center gap-3 cursor-pointer" id="menu-btn">
+                MENU
+                <i class="bi bi-list-nested"></i>
+            </p>
+            <div class="flex flex-col absolute gap-5 top-[50px] left-[50px] z-50 hidden" id="dropdown">
+                <a class="text-white text-[20px] font-semibold hover:bg-white w-[200px] hover:text-black transition-all" href="/home">Home</a>
+                <a class="text-white text-[20px] font-semibold hover:bg-white w-[200px] hover:text-black transition-all" href="/about-us">About us</a>
+                <a class="text-white text-[20px] font-semibold hover:bg-white w-[200px] hover:text-black transition-all" href="/services">Services</a>
+                <a class="text-white text-[20px] font-semibold hover:bg-white w-[200px] hover:text-black transition-all" href="/portfolio">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+  
+    .container{
+		max-width: 1920px;
+		padding: 0 102px;
+		margin: 0 auto;
+	}
+</style>
